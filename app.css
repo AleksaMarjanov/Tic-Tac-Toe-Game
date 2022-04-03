@@ -1,0 +1,38 @@
+:root {
+    --purple: #3e0249;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--purple);
+    font-family: "Heebo", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.container {
+    height: 100vh;
+    flex-direction: column;
+}
+
+#gameboard {
+    width: 450px;
+    flex-wrap: wrap;
+}
+.box {
+    height: 150px;
+    width: 150px;
+    color: var(--purple);  
+}
+.btn:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+}
