@@ -8,30 +8,28 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./app.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <div class="container d-flex justify-content-center align-items-center p-5">
-        <h1 class="" id="playText">Let's Play</h1>
-        <button id="restartBtn" class="btn btn-dark">Restart Game</button>
-        <div class="row d-flex mt-5 justify-content-center align-items-center" id="gameboard">
-            <div class="col-md-4 box" id="0"></div>
-            <div class="col-md-4 box" id="1"></div>
-            <div class="col-md-4 box" id="2"></div>
-        </div>
-        <div class="row d-flex justify-content-center align-items-center" id="gameboard">
-            <div class="col-md-4 box" id="0"></div>
-            <div class="col-md-4 box" id="1"></div>
-            <div class="col-md-4 box" id="2"></div>
-        </div>
-        <div class="row d-flex justify-content-center align-items-center " id="gameboard">
-            <div class="col-md-4 box" id="0"></div>
-            <div class="col-md-4 box" id="1"></div>
-            <div class="col-md-4 box" id="2"></div>
-        </div>
-        </div>
+    <div class="container-fluid mt-5 text-center justify-content-center align-items-center bg-light text-dark">
+    <h1 class="">Let's Play</h1>
+    <h1 >Tic Tac Toe</h1>
+    <div class="gameboard justify-content-center align-items-center" id="gameboard">
+        <div class="box" data-box></div>
+        <div class="box" data-box></div>
+        <div class="box" data-box></div>
+        <div class="box" data-box></div>
+        <div class="box" data-box></div>
+        <div class="box" data-box></div>
+        <div class="box" data-box></div>
+        <div class="box" data-box></div>
+        <div class="box" data-box></div>
+      </div>
+      <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button class="btn btn-dark" id="restartBtn">Restart</button>
+      </div>
     </div>
     
-
-    <script src="app.js"></script>
 </body>
 </html>
