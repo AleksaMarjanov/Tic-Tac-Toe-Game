@@ -1,6 +1,5 @@
 const X_CLASS = 'x'
 const CIRCLE_CLASS = 'circle'
-// Winning combinations
 const WINNING_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
@@ -21,25 +20,30 @@ const winningMessageElement = document.getElementById('winningMessage')
 const restartButton = document.getElementById('restartBtn')
 let circleTurn
 
-
+//calling function to start the game
 startGame()
-
+// clicking on Play Again button will restart game
 restartButton.addEventListener('click', startGame)
 
 function startGame() {
+    //Set to be X's Turn first
     circleTurn = false;
+    // For each cell remove X & Circle
     boxElements.forEach ( box => {
         box.classList.remove(X_CLASS)
         box.classList.remove(CIRCLE_CLASS)
         box.removeEventListener('click', handleClick)
+        // Once cell is clicked in the grid don't allow change within that same box
         box.addEventListener('click', handleClick, {once: true})
+        console.log(handleClick)
     })
     setBoardHoverClass()   
     winningMessageElement.classList.remove('show') 
 }
-
+// On click it will target box 
 function handleClick(e) {
     const box = e.target
+    // Whose turn it is assign it to be the current class
     const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
     // console.log('We clicked')
     // Place mark
@@ -59,14 +63,16 @@ function handleClick(e) {
     }
 
 }
-
+// End of game if it is draw
 function endGame(draw) {
     if(draw) {
         winningMessageTextElement.innerText = 'Draw!'
     }
+    // if it is not draw, did X or O win the game
     else {
         winningMessageTextElement.innerText = `${circleTurn ? "O's": "X's"} Wins!`
     }
+    // Displaying winning message
     winningMessageElement.classList.add('show')
 }
 
@@ -76,11 +82,11 @@ function isDraw() {
         box.classList.contains(CIRCLE_CLASS)
     })
 }
-
+// Creating a function for placing mark on the grid
 function placeMark(box, currentClass) {
     box.classList.add(currentClass)
 }
-
+// Checking whose turn it is and switching turns
 function switchTurns() {
     circleTurn = !circleTurn;
 }
@@ -103,7 +109,7 @@ function checkWin(currentClass) {
         })
     })
 }
-
+// adding animation to the page using gsap
 const tl = gsap.timeline({defaults: {ease: "power1.out"}})
 
 tl.to('.text', {y: "0%", duration: 1, stagger: 0.25});

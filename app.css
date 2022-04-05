@@ -193,12 +193,12 @@
     color: white;
     border-color: white;
   }
-
+/* Adding an animation to the button Play Again when hovered */
   .btn:hover {
     transform: translateY(-2px);
     cursor: pointer;
 }
-  
+
   .winning-message.show {
     display: flex;
   }
