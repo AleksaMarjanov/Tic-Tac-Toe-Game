@@ -10,11 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto&display=swap" rel="stylesheet">
     <script src="app.js" defer></script>
 </head>
-<body>
-    <div class="container-fluid mt-5 text-center justify-content-center align-items-center bg-light text-dark">
-    <h1 class="">Let's Play</h1>
-    <h1 >Tic Tac Toe</h1>
-    <div class="gameboard justify-content-center align-items-center" id="gameboard">
+<body class="landing">
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Let's</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Play Some</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Tic Tac Toe</span>
+            </h1>
+        </div>
+    </div>
+  
+    <!-- <div class=" container-fluid p-5 d-flex-col h-100 text-center justify-content-center align-items-center text-dark"> 
+        <h2 class="justify-content-center align-items-center d-flex">
+            <span class="Tic">
+                Tic Tac Toe
+            </span>
+        </h2>  -->
+        <!-- game grid of 9 cells -->
+    <div class="gameboard mb-0 justify-content-center align-items-center" id="gameboard">
         <div class="box" data-box></div>
         <div class="box" data-box></div>
         <div class="box" data-box></div>
@@ -25,11 +43,16 @@
         <div class="box" data-box></div>
         <div class="box" data-box></div>
       </div>
+      <!-- Assignment of data to access from javascript-->
       <div class="winning-message" id="winningMessage">
         <div data-winning-message-text></div>
-        <button class="btn btn-dark" id="restartBtn">Restart</button>
+        <button class="btn btn-dark" id="restartBtn">Play Again</button>
       </div>
     </div>
+    <!-- Background that will come from y=100% to y=-100% -->
+    <div class="slider"></div>
     
+<!-- Gsap animation script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

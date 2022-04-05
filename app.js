@@ -1,5 +1,6 @@
 const X_CLASS = 'x'
 const CIRCLE_CLASS = 'circle'
+// Winning combinations
 const WINNING_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
@@ -10,8 +11,11 @@ const WINNING_COMBINATIONS = [
     [0, 4, 8],
     [2, 4, 6]
 ]
+// Getting each box of the grid
 const boxElements = document.querySelectorAll('[data-box]')
+// Gameboard as the grid of game
 const gameboard = document.getElementById('gameboard')
+// selector for display message in case win/lose/draw
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 const winningMessageElement = document.getElementById('winningMessage')
 const restartButton = document.getElementById('restartBtn')
@@ -99,3 +103,10 @@ function checkWin(currentClass) {
         })
     })
 }
+
+const tl = gsap.timeline({defaults: {ease: "power1.out"}})
+
+tl.to('.text', {y: "0%", duration: 1, stagger: 0.25});
+tl.to('.slider', {y: '-100%', duration: 1.5, delay: 0.5})
+tl.to('.intro', {y: '-100%', duration: 1}, '-=1')
+tl.to('.gameboard', {y: '0%', duration: 1}, '-=1')
