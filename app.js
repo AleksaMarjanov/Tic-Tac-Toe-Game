@@ -98,7 +98,7 @@ function setBoardHoverClass() {
     gameboard.classList.remove(CIRCLE_CLASS)
     if (circleTurn) {
         gameboard.classList.add(CIRCLE_CLASS)
-        turn.textContent = "It is Circles turn"
+        turn.textContent = "It is O's turn"
     }
     else {
         gameboard.classList.add(X_CLASS);
