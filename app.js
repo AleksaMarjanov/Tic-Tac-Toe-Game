@@ -17,15 +17,17 @@ const gameboard = document.getElementById('gameboard')
 // selector for display message in case win/lose/draw
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 const winningMessageElement = document.getElementById('winningMessage')
-const restartButton = document.getElementById('restartBtn')
+const playAgain = document.getElementById('restartBtn')
 const startOver = document.getElementById('startOver')
 const turn = document.querySelector('.turn')
+const restart = document.querySelector('#restart')
 let circleTurn
 
 //calling function to start the game
 startGame()
 // clicking on Play Again button will restart game
-restartButton.addEventListener('click', startGame) 
+restart.addEventListener('click', startGame)
+playAgain.addEventListener('click', startGame) 
 
 function startGame() {
     //Set to be X's Turn first
