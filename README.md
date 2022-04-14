@@ -11,5 +11,6 @@ If you want to preview a game: https://aleksamarjanov.github.io/Tic-Tac-Toe-Game
 
 text animations on game are done with gsap:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" > </script>
+<hr>
 
-<img src="https://giphy.com/gifs/B1h8DJCEtxuF7gBhAC?cid=790b7611a95eaceb161f09c503011e05d4a3660e7c194037&rid=giphy.gif&ct=s" width="200"/>
+<img src="https://media2.giphy.com/media/B1h8DJCEtxuF7gBhAC/giphy.gif?cid=790b7611d22a7f92c53a207cd0cef8a24f4898d562b08ece&rid=giphy.gif&ct=g" width="500"/>
