@@ -8,3 +8,9 @@ c. A button should be available to clear the grid and restart the game.
 d. When a player has won, or the board is full and the game results in a draw, a Bootstrap alert or similar Bootstrap component should appear across the screen announcing the winner.
 
 If you want to preview a game: https://aleksamarjanov.github.io/Tic-Tac-Toe-Game/
+
+text animations on game are done with gsap:
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" > </script>
+<hr>
+
+<img src="https://media2.giphy.com/media/B1h8DJCEtxuF7gBhAC/giphy.gif?cid=790b7611d22a7f92c53a207cd0cef8a24f4898d562b08ece&rid=giphy.gif&ct=g" width="500"/>
