@@ -14,4 +14,4 @@ text animations on game are done with gsap:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" > </script>
 <hr>
 
-<img src="https://media0.giphy.com/media/Q1YJWPYefwOgZZcuA3/giphy.gif?cid=790b7611a49c968bc8164ef93b40fc9aef2e3418f37c44d9&rid=giphy.gif&ct=g" width="500"/>
+<img src="https://media4.giphy.com/media/paUq4ztOnkNa3gs4P8/giphy.gif?cid=790b7611b597deb2678197c50bf940e9f2ebbe397d1e421a&rid=giphy.gif&ct=g" width="500"/>
