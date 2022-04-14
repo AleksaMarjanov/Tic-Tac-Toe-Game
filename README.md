@@ -10,4 +10,4 @@ d. When a player has won, or the board is full and the game results in a draw, a
 If you want to preview a game: https://aleksamarjanov.github.io/Tic-Tac-Toe-Game/
 
 text animations on game are done with gsap:
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" > </script>
