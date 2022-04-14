@@ -10,7 +10,7 @@
 
   h1, h2 {
     font-size: 70px;
-    font-family: "Heebo", sans-serif;
+    
 } 
 
 
@@ -203,3 +203,7 @@
     display: flex;
   }
 
+  .turn {
+    font-size: 3rem;
+    font-family: "Heebo", sans-serif;
+  }

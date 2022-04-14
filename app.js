@@ -18,12 +18,14 @@ const gameboard = document.getElementById('gameboard')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 const winningMessageElement = document.getElementById('winningMessage')
 const restartButton = document.getElementById('restartBtn')
+const startOver = document.getElementById('startOver')
+const turn = document.querySelector('.turn')
 let circleTurn
 
 //calling function to start the game
 startGame()
 // clicking on Play Again button will restart game
-restartButton.addEventListener('click', startGame)
+restartButton.addEventListener('click', startGame) 
 
 function startGame() {
     //Set to be X's Turn first
@@ -96,9 +98,11 @@ function setBoardHoverClass() {
     gameboard.classList.remove(CIRCLE_CLASS)
     if (circleTurn) {
         gameboard.classList.add(CIRCLE_CLASS)
+        turn.textContent = "It is Circles turn"
     }
     else {
         gameboard.classList.add(X_CLASS);
+        turn.textContent = "It is X's turn"
     }
 }
 
@@ -116,3 +120,4 @@ tl.to('.text', {y: "0%", duration: 1, stagger: 0.25});
 tl.to('.slider', {y: '-100%', duration: 1.5, delay: 0.5})
 tl.to('.intro', {y: '-100%', duration: 1}, '-=1')
 tl.to('.gameboard', {y: '0%', duration: 1}, '-=1')
+
